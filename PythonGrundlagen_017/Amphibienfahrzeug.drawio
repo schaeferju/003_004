@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1">
+  <diagram name="Seite-1" id="PRiVQ9_dyEzZJWYA4mzl">
+    <mxGraphModel dx="1434" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="adu1XG-rUcnxZ4g86r_b-1" value="Auto" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=45.333333333333336;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="396" width="158" height="143.33333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="adu1XG-rUcnxZ4g86r_b-2" value="- räder: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="adu1XG-rUcnxZ4g86r_b-1">
+          <mxGeometry y="45.333333333333336" width="158" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="adu1XG-rUcnxZ4g86r_b-3" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="adu1XG-rUcnxZ4g86r_b-1">
+          <mxGeometry y="90.33333333333334" width="158" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="adu1XG-rUcnxZ4g86r_b-4" value="+ fahren() : : str" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="adu1XG-rUcnxZ4g86r_b-1">
+          <mxGeometry y="98.33333333333334" width="158" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="adu1XG-rUcnxZ4g86r_b-5" value="Boot" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=45.333333333333336;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="408" y="396" width="195" height="143.33333333333334" as="geometry" />
+        </mxCell>
+        <mxCell id="adu1XG-rUcnxZ4g86r_b-6" value="- propeller: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="adu1XG-rUcnxZ4g86r_b-5">
+          <mxGeometry y="45.333333333333336" width="195" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="adu1XG-rUcnxZ4g86r_b-7" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="adu1XG-rUcnxZ4g86r_b-5">
+          <mxGeometry y="90.33333333333334" width="195" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="adu1XG-rUcnxZ4g86r_b-8" value="+ schwimmen() : : str" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="adu1XG-rUcnxZ4g86r_b-5">
+          <mxGeometry y="98.33333333333334" width="195" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="adu1XG-rUcnxZ4g86r_b-9" value="Amphibienfahrzeug" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=47.2;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="211" y="220" width="363" height="102.2" as="geometry" />
+        </mxCell>
+        <mxCell id="adu1XG-rUcnxZ4g86r_b-10" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="adu1XG-rUcnxZ4g86r_b-9">
+          <mxGeometry y="47.2" width="363" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="adu1XG-rUcnxZ4g86r_b-11" value="+ modus_wechseln(modus: str) : : str" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="adu1XG-rUcnxZ4g86r_b-9">
+          <mxGeometry y="55.2" width="363" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="adu1XG-rUcnxZ4g86r_b-12" value="" style="curved=1;startArrow=none;endArrow=block;endSize=16;endFill=0;exitX=0.28;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="adu1XG-rUcnxZ4g86r_b-9" target="adu1XG-rUcnxZ4g86r_b-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="279" y="371" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="adu1XG-rUcnxZ4g86r_b-13" value="" style="curved=1;startArrow=none;endArrow=block;endSize=16;endFill=0;exitX=0.72;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="adu1XG-rUcnxZ4g86r_b-9" target="adu1XG-rUcnxZ4g86r_b-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="506" y="371" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
