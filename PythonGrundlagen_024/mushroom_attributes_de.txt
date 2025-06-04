@@ -1,0 +1,70 @@
+0. Class Labels:            edible=e, poisonous=p
+0. Klassenzugehörigkeit:     essbar=e, giftig=p
+
+1. cap-shape:                bell=b,conical=c,convex=x,flat=f, knobbed=k,sunken=s
+1. Hutförmigkeit:            glockig=b,konisch=c,gewölbt=x,flach=f, geknöpft=k,vertieft=s
+
+2. cap-surface:              fibrous=f,grooves=g,scaly=y,smooth=s
+2. Hutoberfläche:           faserig=f,gerieft=g,schuppig=y,glatt=s
+
+3. cap-color:                brown=n,buff=b,cinnamon=c,gray=g,green=r, pink=p,purple=u,red=e,white=w,yellow=y
+3. Hutfarbe:                braun=n,lederfarben=b,Zimtfarbe=c,grau=g,grün=r, rosa=p,lila=u,rot=e,weiß=w,gelb=y
+
+4. bruises?:                 bruises=t,no=f
+4. Druckstellen?:           ja=t,nein=f
+
+5. odor:                     almond=a,anise=l,creosote=c,fishy=y,foul=f, musty=m,none=n,pungent=p,spicy=s
+5. Geruch:                  mandelartig=a,anisartig=l,kreosotartig=c,fischig=y,faulig=f, modrig=m,kein=n,stechend=p,würzig=s
+
+6. gill-attachment:          attached=a,descending=d,free=f,notched=n
+6. Lamellenansatz:          angewachsen=a,herablaufend=d,frei=f,eingeschnitten=n
+
+7. gill-spacing:             close=c,crowded=w,distant=d
+7. Lamellenabstand:         eng=c,gedrängt=w,weit=d
+
+8. gill-size:                broad=b,narrow=n
+8. Lamellengröße:           breit=b,schmal=n
+
+9. gill-color:               black=k,brown=n,buff=b,chocolate=h,gray=g, green=r,orange=o,pink=p,purple=u,red=e, white=w,yellow=y
+9. Lamellenfarbe:           schwarz=k,braun=n,lederfarben=b,schokoladenbraun=h,grau=g, grün=r,orange=o,rosa=p,lila=u,rot=e, weiß=w,gelb=y
+
+10. stalk-shape:              enlarging=e,tapering=t
+10. Stielform:              sich verbreiternd=e,sich verjüngend=t
+
+11. stalk-root:               bulbous=b,club=c,cup=u,equal=e, rhizomorphs=z,rooted=r,missing=?
+11. Stielbasis:             knollig=b,keulenförmig=c,becherförmig=u,gleichmäßig=e, Rhizomorphen=z,bewurzelt=r,nicht vorhanden=?
+
+12. stalk-surface-above-ring: fibrous=f,scaly=y,silky=k,smooth=s
+12. Stieloberfläche über dem Ring: faserig=f,schuppig=y,seidenglänzend=k,glatt=s
+
+13. stalk-surface-below-ring: fibrous=f,scaly=y,silky=k,smooth=s
+13. Stieloberfläche unter dem Ring: faserig=f,schuppig=y,seidenglänzend=k,glatt=s
+
+14. stalk-color-above-ring:   brown=n,buff=b,cinnamon=c,gray=g,orange=o, pink=p,red=e,white=w,yellow=y
+14. Stielfarbe über dem Ring: braun=n,lederfarben=b,Zimtfarbe=c,grau=g,orange=o, rosa=p,rot=e,weiß=w,gelb=y
+
+15. stalk-color-below-ring:   brown=n,buff=b,cinnamon=c,gray=g,orange=o, pink=p,red=e,white=w,yellow=y
+15. Stielfarbe unter dem Ring: braun=n,lederfarben=b,Zimtfarbe=c,grau=g,orange=o, rosa=p,rot=e,weiß=w,gelb=y
+
+16. veil-type:                partial=p,universal=u
+16. Hüllentyp:               teilweise=p,gesamt=u
+
+17. veil-color:               brown=n,orange=o,white=w,yellow=y
+17. Hüllenfarbe:             braun=n,orange=o,weiß=w,gelb=y
+
+18. ring-number:              none=n,one=o,two=t
+18. Anzahl Ringe:           keiner=n,einer=o,zwei=t
+
+19. ring-type:                cobwebby=c,evanescent=e,flaring=f,large=l, none=n,pendant=p,sheathing=s,zone=z
+19. Ringtyp:                 spinnwebartig=c,vergänglich=e,abstehend=f,groß=l, keiner=n,hängend=p,scheidenartig=s,Zone=z
+
+20. spore-print-color:        black=k,brown=n,buff=b,chocolate=h,green=r, orange=o,purple=u,white=w,yellow=y
+20. Sporenpulverfarbe:       schwarz=k,braun=n,lederfarben=b,schokoladenbraun=h,grün=r, orange=o,lila=u,weiß=w,gelb=y
+
+21. population:               abundant=a,clustered=c,numerous=n, scattered=s,several=v,solitary=y
+21. Population:              reichlich=a,gebüschelt=c,zahlreich=n, verstreut=s,einiges=v,einzeln=y
+
+22. habitat:                  grasses=g,leaves=l,meadows=m,paths=p, urban=u,waste=w,woods=d
+22. Lebensraum:              Gras=g,Blätter=l,Wiesen=m,Pfade=p, städtisch=u,Abfall=w,Wälder=d
+
+
