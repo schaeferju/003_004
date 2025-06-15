@@ -20,3 +20,6 @@ class TemperatureTrendClassifier:
             rounded=True,
             ax=ax
         )
+
+    def predict_proba(self, features):
+        return self.model.predict_proba([features])[0]

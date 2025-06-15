@@ -1,4 +1,5 @@
 import tkinter as tk
+import os
 from tkinter import ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
@@ -9,7 +10,10 @@ from classification_model import TemperatureTrendClassifier
 
 class TemperatureApp:
     def __init__(self, root):
-        self.manager = StadtManager("GlobalLandTemperaturesByMajorCity_yearly_1900-2012_sigma_classified.csv")
+        # Set up the StadtManager with the CSV file (using os.path to adjust the path, to always work when csy file is in the same directroy as the scripts)
+        base_path = os.path.dirname(os.path.abspath(__file__))
+        csv_path = os.path.join(base_path, "GlobalLandTemperaturesByMajorCity_yearly_1900-2012_sigma_classified.csv")
+        self.manager = StadtManager(csv_path)
 
         self.root = root
         self.root.title("Temperaturanalyse")

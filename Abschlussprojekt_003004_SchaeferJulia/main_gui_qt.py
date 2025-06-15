@@ -44,7 +44,7 @@ class RegressionTab(QWidget):
         self.result_label = QLabel("")
 
         # Plot
-        self.fig = Figure(figsize=(6, 4))
+        self.fig = Figure(figsize=(8, 6))
         self.canvas = FigureCanvas(self.fig)
         self.ax = self.fig.add_subplot(111)
 
@@ -108,7 +108,7 @@ class ClassificationTab(QWidget):
         self.result_label = QLabel("")
 
         # Entscheidungsbaum
-        self.fig = Figure(figsize=(6, 4))
+        self.fig = Figure(figsize=(8, 6))
         self.ax = self.fig.add_subplot(111)
         self.canvas = FigureCanvas(self.fig)
 
@@ -131,9 +131,25 @@ class ClassificationTab(QWidget):
 
         clf = TemperatureTrendClassifier()
         clf.train(X, y)
-        prediction = clf.predict([change, std])
 
-        self.result_label.setText(f"Trend: {prediction}")
+        prediction = clf.predict([change, std])
+        ###Probability
+        proba = clf.predict_proba([change, std])
+
+        class_labels = clf.model.classes_  # Reihenfolge der Klassen
+        proba_dict = dict(zip(class_labels, proba))
+
+        result_text = f"<b>Trend:</b> {prediction}<br>"
+        result_text += "<b>Wahrscheinlichkeiten:</b><br>"
+        for label in class_labels:
+            result_text += f"→ {label}: {proba_dict[label]*100:.1f}%<br>"
+
+        # Unsicherheitswarnung
+        if abs(proba_dict[class_labels[0]] - proba_dict[class_labels[1]]) < 0.15:
+            result_text += "<b style='color:red;'>⚠️ Entscheidung unsicher!</b>"
+        
+        self.result_label.setText(result_text)
+        #self.result_label.setText(f"Trend: {prediction}")
 
         self.ax.clear()
         clf.plot(["TempChange25y", "TempStd"], ["Moderate warming", "Strong warming"], ax=self.ax)
@@ -144,7 +160,7 @@ class ClassificationTab(QWidget):
 class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Temperaturanalyse (PyQt)")
+        self.setWindowTitle("Temperaturanalyse")
         # Set up the StadtManager with the CSV file (using os.path to adjust the path, to always work when csy file is in the same directroy as the scripts)
         base_path = os.path.dirname(os.path.abspath(__file__))
         csv_path = os.path.join(base_path, "GlobalLandTemperaturesByMajorCity_yearly_1900-2012_sigma_classified.csv")
@@ -168,6 +184,6 @@ class MainWindow(QWidget):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     win = MainWindow()
-    win.resize(800, 600)
+    win.resize(1000, 800)
     win.show()
     sys.exit(app.exec())
