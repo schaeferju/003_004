@@ -6,6 +6,7 @@ from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 
 import sys
+import os
 
 from stadt_verwaltung import StadtManager
 from regression_model import CityTemperatureAnalyzer
@@ -144,7 +145,10 @@ class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Temperaturanalyse (PyQt)")
-        self.manager = StadtManager("GlobalLandTemperaturesByMajorCity_yearly_1900-2012_sigma_classified.csv")
+        # Set up the StadtManager with the CSV file (using os.path to adjust the path, to always work when csy file is in the same directroy as the scripts)
+        base_path = os.path.dirname(os.path.abspath(__file__))
+        csv_path = os.path.join(base_path, "GlobalLandTemperaturesByMajorCity_yearly_1900-2012_sigma_classified.csv")
+        self.manager = StadtManager(csv_path)
         self.init_ui()
 
     def init_ui(self):
