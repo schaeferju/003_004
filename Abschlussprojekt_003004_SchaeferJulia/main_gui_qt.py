@@ -152,7 +152,7 @@ class ClassificationTab(QWidget):
         #self.result_label.setText(f"Trend: {prediction}")
 
         self.ax.clear()
-        clf.plot(["TempChange25y", "TempStd"], ["Moderate warming", "Strong warming"], ax=self.ax)
+        clf.plot(["TempChange25y", "TempStd"],  list(class_labels), ax=self.ax)
         self.ax.set_title("Entscheidungsbaum")
         self.canvas.draw()
 
